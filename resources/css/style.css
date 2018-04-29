@@ -11,6 +11,9 @@ html {
   background-size: cover;
   height: 30rem;
 }
+#menu {
+  display: none;
+}
 .container {
   width: 960px;
   margin: 0 auto;
@@ -24,7 +27,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: cadetblue;
 }
@@ -56,7 +59,7 @@ html {
 }
 /*Selling Points*/
 .selling {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   /*padding: 3rem 0;*/
@@ -99,7 +102,7 @@ html {
 }*/
 /*Additional Information*/
 .info {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -124,7 +127,7 @@ html {
   display: flex;
   align-items: center;
   background-color: azure;
-  width: 960px;
+  max-width: 960px;
   margin: 5rem auto 0 auto;
 }
 .text {
@@ -134,4 +137,101 @@ html {
 .text img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+/*Media Queries*/
+@media only screen and (max-width: 1024px) {
+  .head {
+    position: relative;
+    top:0;
+    width: 100%;
+  }
+  .slogan h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 4rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .top {
+    height: 22rem;
+  }
+  .nav span {
+    padding: 0.33rem 0.66rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .top {
+    background-position: 20%;
+  }
+  #menu {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  .nav span {
+    display: none;
+  }
+  .top {
+    height: 17rem;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slogan h1 {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+ .slogan {
+   width: 100%;
+   margin: 9rem 0 0 0;
+ }
+ .selling {
+   flex-direction: column;
+   align-items: center;
+   margin: 3.77rem auto;
+ }
+ .box img {
+   margin-top: 1.54rem;
+   padding:
+ }
+ .box.margin {
+   margin: 0;
+ }
+ .box.paper {
+   margin: 0;
+ }
+ .box p {
+   font-size: 0.77rem;
+ }
+ .info {
+   flex-direction: column;
+ }
+ .boxy {
+   width: 100%;
+ }
+ .unique {
+   margin: 0;
+ }
+ .boxy h2 {
+   width: 100%;
+   text-align: center;
+ }
+ .boxy p {
+   margin: 1rem 0.25rem 4rem 0.25rem;
+   font-size: 0.77rem;
+ }
+ .text span {
+   display: none;
+ }
+ .text {
+  margin: 0 auto;
+ }
 }
